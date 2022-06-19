@@ -65,3 +65,11 @@ Short list of useful code for Mautic open-source platform
 
     open message.ini from here - /app/bundles/UserBundle/Translations/en_US/messages.ini
     ---- Replace ""Mautic"" by "Your Brand" in line-57
+    
+**Chenge page title**
+
+    If you're using < 2.6, it should be line 1510 and 1513 in:
+    /app/bundles/CoreBundle/Assets/js/1.core.js
+    or if you're on 2.6 it is on line 113 and 116 in:
+    /app/bundles/CoreBundle/Assets/js/1a.content.js
+    After updating those files, you have to regenerate mautic's assets with the command line console.
